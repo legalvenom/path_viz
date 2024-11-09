@@ -14,7 +14,6 @@ export default class Node extends Component {
           row,
           lock,
           shiftStartNode,
-          row_start,
           changing_start,
           changing_finish,
           shiftEndNode,
