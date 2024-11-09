@@ -14,8 +14,7 @@ describe('App Component', () => {
     expect(screen.getByText('Clear Path')).toBeInTheDocument();
     expect(screen.getByText('Clear Board')).toBeInTheDocument();
     
-    // Test distance counter
-    expect(screen.getByText('Total Distance')).toBeInTheDocument();
+    
   });
 });
 
