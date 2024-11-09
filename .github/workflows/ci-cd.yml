@@ -32,6 +32,10 @@ jobs:
       - name: Run Tests
         run: npm test -- --coverage # Optional: run tests with coverage
 
+      # Run WebdriverIO Tests
+      - name: Run WebdriverIO Tests
+        run: npm run wdio
+
       # Build the app
       - name: Build the app
         run: npm run build
