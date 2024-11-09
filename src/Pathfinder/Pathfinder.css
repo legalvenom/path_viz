@@ -1,0 +1,43 @@
+.grid {
+    margin: 55px 0 0;
+  }
+
+.BOX{
+  display: inline-block;
+}
+.header{
+  display: inline;
+}
+.dropup, .dropright, .dropdown, .dropleft {
+  position: relative;
+  display: inline;
+}
+
+
+.btn-success {
+  margin: 5px;
+  color: #fff;
+  background-color: rgb(83, 83, 83);
+  border-color: rgb(83, 83, 83);
+  position: relative;
+  width: 120px;
+  height: 35px;
+  padding: 2px;
+  
+}
+
+.toggle {
+  color: rgb(83, 83, 83);
+  border-color: rgb(83, 83, 83);
+}
+
+.btn-primary{
+  color: #fff;
+  background-color: rgb(83, 83, 83);
+  border-color: rgb(83, 83, 83);
+  margin: 5px;
+  position: relative;
+  width: 120px;
+  height: 35px;
+  padding: 2px;
+}
