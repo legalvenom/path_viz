@@ -1,15 +1,16 @@
-const { expect } = require('@wdio/globals')
-const LoginPage = require('../pageobjects/login.page')
-const SecurePage = require('../pageobjects/secure.page')
+describe('Path Visualizer', () => {
+    it('should display the grid and allow node selection', async () => {
+        await browser.url('http://localhost:3000');  // URL of your app, ensure the app is running
 
-describe('My Login application', () => {
-    it('should login with valid credentials', async () => {
-        await LoginPage.open()
+        // Wait for the page to load and the grid to be displayed
+        const grid = await $('div.grid');  // Adjust selector if necessary for your grid element
+        await expect(grid).toBeDisplayed();  // Ensure the grid is visible
 
-        await LoginPage.login('tomsmith', 'SuperSecretPassword!')
-        await expect(SecurePage.flashAlert).toBeExisting()
-        await expect(SecurePage.flashAlert).toHaveText(
-            expect.stringContaining('You logged into a secure area!'))
-    })
-})
+        // Find the start node and click to select it
+        const startNode = await $('div.node-start');  // Adjust selector based on your app's start node element
+        await expect(startNode).toBeDisplayed();  // Ensure the start node is visible
+        await startNode.click();
 
+       
+    });
+});
